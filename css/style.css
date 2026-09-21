@@ -1,0 +1,198 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+header {
+    background: #185a37;
+    color: white;
+    padding: 18px;
+}
+
+header h1,
+header p {
+    margin: 4px 0;
+}
+
+nav {
+    background: #123d28;
+    padding: 10px 18px;
+}
+
+nav a,
+nav button {
+    color: white;
+    margin-right: 12px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    padding: 6px 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+nav a:hover,
+nav button:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 92%;
+    max-width: 1000px;
+    margin: 22px auto;
+    flex: 1;
+}
+
+section {
+    background: white;
+    padding: 18px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.tarjeta {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 12px;
+    background: #fff;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.tarjeta h3 {
+    margin-bottom: 8px;
+}
+
+button,
+.boton {
+    display: inline-block;
+    background: #185a37;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 9px 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover,
+.boton:hover {
+    background: #123d28;
+}
+
+.boton-rojo {
+    background: #a53030;
+}
+
+.boton-rojo:hover {
+    background: #7c2424;
+}
+
+form {
+    max-width: 600px;
+}
+
+.campo {
+    margin-bottom: 13px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+textarea {
+    min-height: 70px;
+    resize: vertical;
+}
+
+.error {
+    color: #b00020;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.mensaje-ok {
+    color: #146c2e;
+    font-weight: bold;
+}
+
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 9px;
+    text-align: left;
+}
+
+th {
+    background: #e8f2ec;
+}
+
+.resumen {
+    border: 1px solid #bbb;
+    background: #f9f9f9;
+    padding: 12px;
+    margin: 14px 0;
+}
+
+
+.dato {
+    padding: 8px;
+    border-left: 4px solid #185a37;
+    background: #f1f7f3;
+    margin-bottom: 8px;
+}
+
+footer {
+    background: #123d28;
+    min-height: 50px;
+    margin-top: auto;
+}
+
+@media (max-width: 650px) {
+    .tarjeta {
+        width: 100%;
+    }
+}
