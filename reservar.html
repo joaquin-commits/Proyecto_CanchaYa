@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar cancha</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Reservar cancha</h1>
+        <p>Selecciona cancha, fecha y horario. El pago confirma la reserva.</p>
+    </header>
+
+    <nav>
+        <a href="cliente.html">Buscar canchas</a>
+        <a href="reservar.html">Reservar</a>
+        <a href="mis-reservas.html">Mis reservas</a>
+        <button id="btnSalir">Cerrar sesión</button>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Nueva reserva</h2>
+            <form id="formReserva" novalidate>
+                <div class="campo">
+                    <label for="cancha">Cancha</label>
+                    <select id="cancha" name="cancha">
+                        <option value="">Seleccione una cancha</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha">
+                </div>
+
+                <div class="campo">
+                    <label for="horario">Horario disponible</label>
+                    <select id="horario" name="horario">
+                        <option value="">Seleccione un horario</option>
+                    </select>
+                </div>
+
+                <article class="resumen" id="resumenReserva">
+                    Complete cancha, fecha y horario para revisar la reserva.
+                </article>
+
+                <p class="error" id="errorReserva"></p>
+                <p class="mensaje-ok" id="mensajeReserva"></p>
+                <button type="submit">Pagar reserva</button>
+            </form>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/cliente.js"></script>
+</body>
+</html>

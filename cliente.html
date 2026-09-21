@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente - Reserva Canchas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Panel Cliente</h1>
+        <p>Bienvenido, <span id="nombreSesion"></span>.</p>
+    </header>
+
+    <nav>
+        <a href="cliente.html">Buscar canchas</a>
+        <a href="reservar.html">Reservar</a>
+        <a href="mis-reservas.html">Mis reservas</a>
+        <button id="btnSalir">Cerrar sesión</button>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Buscar canchas</h2>
+            <div class="campo">
+                <label for="buscarCancha">Buscar por nombre, tipo o ubicación</label>
+                <input type="search" id="buscarCancha" placeholder="Ejemplo: fútbol">
+            </div>
+            <div id="listaCanchasCliente" class="contenedor-tarjetas"></div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/cliente.js"></script>
+</body>
+</html>

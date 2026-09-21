@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Reserva Canchas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Registro</h1>
+        <p>Crea una cuenta como Cliente o Dueño de Cancha.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="login.html">Iniciar sesión</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Crear cuenta</h2>
+            <form id="formRegistro" novalidate>
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="name">
+                    <p class="error" id="errorNombre"></p>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" autocomplete="email">
+                    <p class="error" id="errorCorreo"></p>
+                </div>
+
+                <div class="campo">
+                    <label for="clave">Contraseña</label>
+                    <input type="password" id="clave" name="clave" autocomplete="new-password">
+                    <p class="error" id="errorClave"></p>
+                </div>
+
+                <div class="campo">
+                    <label for="tipo">Tipo de perfil</label>
+                    <select id="tipo" name="tipo">
+                        <option value="">Seleccione</option>
+                        <option value="cliente">Cliente</option>
+                        <option value="dueno">Usuario / Dueño de Cancha</option>
+                    </select>
+                    <p class="error" id="errorTipo"></p>
+                </div>
+
+                <button type="submit">Registrarse</button>
+                <p class="mensaje-ok" id="mensajeRegistro"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

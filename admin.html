@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Reserva Canchas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Panel Administrador</h1>
+        <p>Bienvenido, <span id="nombreSesion"></span>.</p>
+    </header>
+
+    <nav>
+        <a href="admin.html">Inicio</a>
+        <a href="admin-canchas.html">Todas las canchas</a>
+        <a href="admin-reservas.html">Todas las reservas</a>
+        <a href="admin-usuarios.html">Usuarios / Dueños</a>
+        <a href="admin-clientes.html">Clientes</a>
+        <button id="btnSalir">Cerrar sesión</button>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Resumen general</h2>
+            <p>El administrador puede revisar y gestionar la información general del sistema.</p>
+            <article id="resumenAdmin"></article>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

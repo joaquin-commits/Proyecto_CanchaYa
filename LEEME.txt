@@ -1,0 +1,34 @@
+PROYECTO RESERVA CANCHAS
+
+Abrir index.html para iniciar el proyecto.
+No requiere servidor, base de datos ni frameworks.
+Los datos se guardan de forma simple usando localStorage del navegador.
+
+CUENTAS DE PRUEBA
+
+Administrador
+Correo: admin@canchas.cl
+Contraseña: admin123
+
+Dueño 1
+Correo: dueno1@canchas.cl
+Contraseña: 1234
+
+Dueño 2
+Correo: dueno2@canchas.cl
+Contraseña: 1234
+
+Cliente 1
+Correo: cliente1@canchas.cl
+Contraseña: 1234
+
+FUNCIONES DEL ADMINISTRADOR
+- Crear canchas y asignarlas obligatoriamente a un usuario dueño.
+- Crear y eliminar usuarios dueños.
+- Crear y eliminar clientes.
+- Usuarios/Dueños y Clientes se administran en páginas separadas.
+- Ver y administrar todas las canchas y reservas.
+
+CAMBIOS DE RESERVA:
+- El cliente debe pagar para que la reserva quede confirmada.
+- El cliente puede cancelar su propia reserva hasta el día anterior a la fecha reservada.

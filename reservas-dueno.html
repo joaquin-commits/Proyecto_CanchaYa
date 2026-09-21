@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas recibidas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Reservas recibidas</h1>
+        <p>Reservas correspondientes solamente a tus canchas.</p>
+    </header>
+
+    <nav>
+        <a href="dueno.html">Inicio</a>
+        <a href="mis-canchas.html">Mis canchas</a>
+        <a href="reservas-dueno.html">Reservas recibidas</a>
+        <button id="btnSalir">Cerrar sesión</button>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Listado de reservas</h2>
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cancha</th>
+                            <th>Cliente</th>
+                            <th>Fecha</th>
+                            <th>Horario</th>
+                            <th>Estado</th>
+                            <th>Pago</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaReservasDueno"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/dueno.js"></script>
+</body>
+</html>

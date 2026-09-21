@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar reservas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Todas las reservas</h1>
+        <p>El administrador puede revisar y cancelar cualquier reserva.</p>
+    </header>
+
+    <nav>
+        <a href="admin.html">Inicio</a>
+        <a href="admin-canchas.html">Todas las canchas</a>
+        <a href="admin-reservas.html">Todas las reservas</a>
+        <a href="admin-usuarios.html">Usuarios / Dueños</a>
+        <a href="admin-clientes.html">Clientes</a>
+        <button id="btnSalir">Cerrar sesión</button>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Listado general</h2>
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cancha</th>
+                            <th>Cliente</th>
+                            <th>Fecha</th>
+                            <th>Horario</th>
+                            <th>Valor</th>
+                            <th>Estado</th>
+                            <th>Pago</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaReservasAdmin"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

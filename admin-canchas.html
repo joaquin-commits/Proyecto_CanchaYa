@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar canchas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Todas las canchas</h1>
+        <p>Gestiona información, horarios, disponibilidad y eliminación.</p>
+    </header>
+
+    <nav>
+        <a href="admin.html">Inicio</a>
+        <a href="admin-canchas.html">Todas las canchas</a>
+        <a href="admin-reservas.html">Todas las reservas</a>
+        <a href="admin-usuarios.html">Usuarios / Dueños</a>
+        <a href="admin-clientes.html">Clientes</a>
+        <button id="btnSalir">Cerrar sesión</button>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Crear nueva cancha</h2>
+            <p>La cancha debe quedar asignada obligatoriamente a un usuario dueño.</p>
+
+            <form id="formNuevaCancha" novalidate>
+                <div class="campo">
+                    <label for="nuevoDueno">Usuario dueño</label>
+                    <select id="nuevoDueno">
+                        <option value="">Seleccione un dueño</option>
+                    </select>
+                    <p class="error" id="errorNuevoDueno"></p>
+                </div>
+
+                <div class="campo">
+                    <label for="nuevoNombreCancha">Nombre</label>
+                    <input type="text" id="nuevoNombreCancha">
+                    <p class="error" id="errorNuevoNombre"></p>
+                </div>
+
+                <div class="campo">
+                    <label for="nuevoTipoCancha">Tipo de cancha</label>
+                    <input type="text" id="nuevoTipoCancha" placeholder="Ejemplo: Fútbol">
+                    <p class="error" id="errorNuevoTipo"></p>
+                </div>
+
+                <div class="campo">
+                    <label for="nuevaUbicacionCancha">Ubicación</label>
+                    <input type="text" id="nuevaUbicacionCancha">
+                    <p class="error" id="errorNuevaUbicacion"></p>
+                </div>
+
+                <div class="campo">
+                    <label for="nuevoValorCancha">Valor</label>
+                    <input type="number" id="nuevoValorCancha" min="1">
+                    <p class="error" id="errorNuevoValor"></p>
+                </div>
+
+                <div class="campo">
+                    <label for="nuevosHorariosCancha">Horarios separados por coma</label>
+                    <input type="text" id="nuevosHorariosCancha" placeholder="17:00, 18:00, 19:00">
+                    <p class="error" id="errorNuevosHorarios"></p>
+                </div>
+
+                <div class="campo">
+                    <label for="nuevaDisponibilidadCancha">Disponibilidad</label>
+                    <select id="nuevaDisponibilidadCancha">
+                        <option value="true">Disponible</option>
+                        <option value="false">No disponible</option>
+                    </select>
+                </div>
+
+                <button type="submit">Guardar nueva cancha</button>
+                <p class="mensaje-ok" id="mensajeNuevaCancha"></p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Gestión de canchas</h2>
+            <div id="canchasAdmin" class="contenedor-tarjetas"></div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
